@@ -1,0 +1,54 @@
+.story{
+
+    &__pictures{
+
+        background-color: $color-primary;
+        grid-column: full-start / col-end 4;
+        align-items: center;
+        background-image:linear-gradient(rgba($color-primary,.6),
+        rgba($color-primary,.6)),
+         url(../pics/istockphoto-1068012594-612x612.jpg);  
+        background-position: center;
+        background-size: cover;
+
+        display: grid;
+        grid-template-columns: repeat(6 , 1fr);
+        grid-template-rows: repeat(6,1fr);
+
+    }
+
+    &__img-1{
+        width: 110%;
+        grid-row: 2 / 6;
+        grid-column: 2/6;
+        box-shadow: 0 2rem 5rem rgba(#000, .5);
+    }
+
+    &__img-2{
+        width: 115%;
+
+        grid-row: 4/6;
+        grid-column: 4/7;
+        z-index: 1;
+        box-shadow: 0 2rem 5rem rgba(#000, .5);
+
+    }
+
+    &__content{
+        background-color: $color-grey-light-1;
+        grid-column: col-start 5 / full-end; 
+
+
+        padding:6rem 8vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &__text{
+        font-size: 1.5rem;
+        font-style: italic;
+        margin-bottom: 6rem;
+    }
+}
